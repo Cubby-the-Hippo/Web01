@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Favorite thing</title>
+    </head>
+
+    <style>
+        @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes bounceText {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(80vw, 0); 
+            }
+            50% {
+                transform: translate(80vw, 80vh); 
+            }
+            75% {
+                transform: translate(0, 80vh); 
+            }
+            100% {
+                transform: translate(0, 0); 
+            }
+        }
+
+        body {
+            background-image: url('https://media.istockphoto.com/id/480585465/photo/who-is-the-boss.jpg?s=612x612&w=0&k=20&c=6HGMxKLOZWJmwDEF0Gb16C0BcnMmY7bvAy3NKmrOW6A=');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #bumpText {
+            animation: flash 1s infinite; 
+            color: rgb(64, 2, 2); 
+        }
+
+        #bouncingText {
+            position: absolute;
+            animation: bounceText 10s ease-in-out infinite;
+            font-size: 40px;
+            color: green;
+        }
+
+        #type1 {
+            color: rgb(255, 0, 0); 
+            text-align: right;
+        }
+        #type2 {
+            color: red;
+            text-align: right;
+            background-color: rgb(208, 255, 0);
+        }
+        #type3 {
+            color: orange;
+            text-align: left;
+        }
+        h1 {
+            color: red;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: purple;
+    }
+
+        
+    </style>
+
+    <body>
+        <h1 id="type3">My favorite things about school</h1>
+        <p id="type1">My favorite thing about school is:</p>
+        <ul>
+            <p id="bumpText">The lunches</p>
+            <img src="images/lunch.jpg" alt="Lunch Image">
+
+            <li id="type2" class="highlight"><a href="https://eastsideprep.instructure.com/">Canvas</a></li>
+
+            <img src="images/IMG_0085.jpeg" height="200" alt="Image">
+            <li id="bouncingText" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Alex Peng</li>
+            
+
+
+        </ul>
+    </body>
+</html>
